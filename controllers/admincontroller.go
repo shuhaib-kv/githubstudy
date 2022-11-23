@@ -35,7 +35,7 @@ func AdminLoginPost(c *gin.Context) { // admin login page post
 	c.Writer.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate") // HTTP 1.1.
 	c.Writer.Header().Set("Pragma", "no-cache")                                   // HTTP 1.0.
 	c.Writer.Header().Set("Expires", "0")
-
+fmt.Println("hai)
 	err := c.Request.ParseForm()
 	if err != nil {
 		fmt.Println("error parsing form")
